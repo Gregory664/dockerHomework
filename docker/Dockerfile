@@ -11,7 +11,7 @@ ENV PATH=/root/.sdkman/candidates/java/current/bin:$PATH
 RUN mkdir /app
 RUN mkdir /app/config
 
-#RUN wget https://github.com/Gregory664/dockerHomework/blob/main/docker/demo-0.0.1-SNAPSHOT.jar -P /app
+RUN wget https://raw.githubusercontent.com/Gregory664/dockerHomework/main/docker/demo-0.0.1-SNAPSHOT.jar -P /app
 
 EXPOSE 80
 
