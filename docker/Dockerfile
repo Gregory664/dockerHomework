@@ -13,7 +13,6 @@ RUN mkdir /app/config
 
 RUN wget https://raw.githubusercontent.com/Gregory664/dockerHomework/main/docker/demo-0.0.1-SNAPSHOT.jar -P /app
 
-EXPOSE 80
+EXPOSE 8080
 
-CMD ["java","-jar","/app/demo-0.0.1-SNAPSHOT.jar"]
-
+CMD ["java","-jar","/app/demo-0.0.1-SNAPSHOT.jar","--spring.config.location=file:/app/config/application.properties"]
