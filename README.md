@@ -10,6 +10,8 @@ Add to properties: name.from.file='your name'
 3. Create docker container: <br>
 <code>docker container run -p 8080:8080 -v "your path to config dir"/config/:/app/config myimage:release </code>
    
+4. Go to http://localhost:8080 and see can see "Hello 'your name'"
+   
    
 
    
